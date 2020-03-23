@@ -33,7 +33,7 @@ var stringifyJSON = function(obj) {
     return "undefined";
   }
 
-  if (typeof obj === null) {
+  if (obj === null) {
     return "null";
   }
 
