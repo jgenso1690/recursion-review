@@ -34,7 +34,7 @@ var stringifyJSON = function(obj) {
   }
 
   if (typeof obj === null) {
-    return 'object';
+    return "null";
   }
 
   if (Array.isArray(obj)){
