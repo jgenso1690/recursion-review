@@ -62,7 +62,7 @@ var stringifyJSON = function(obj) {
         return "{}";
       }
       if (key !== objKeys[objKeys.length-1]) {
-      string += `"${key}":${stringifyJSON(obj[key])} ,`;
+      string += `"${key}":${stringifyJSON(obj[key])},`;
       } else {
         string += `"${key}":${stringifyJSON(obj[key])}`;
       }
