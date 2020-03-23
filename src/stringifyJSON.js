@@ -29,8 +29,12 @@ var stringifyJSON = function(obj) {
     return "false"
   }
 
-  if (typeof obj === undefined || typeof obj === null){
-    return "null";
+  if (typeof obj === undefined) {
+    return "undefined";
+  }
+
+  if (typeof obj === null) {
+    return 'object';
   }
 
   if (Array.isArray(obj)){
