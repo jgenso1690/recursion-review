@@ -55,7 +55,7 @@ var stringifyJSON = function(obj) {
       if (typeof key === 'undefined' || typeof key === 'functions'){
         return "{}";
       }
-      if (!objKeys[objKeys.length-1]) {
+      if (key !== objKeys[objKeys.length-1]) {
       string += key + ":" + stringifyJSON(obj[key]) + ",";
       } else {
         string += key + ":" + stringifyJSON(obj[key]);
