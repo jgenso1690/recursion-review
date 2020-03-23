@@ -21,11 +21,11 @@ var stringifyJSON = function(obj) {
     return obj.toString();
   }
 
-  if (typeof obj === true){
+  if (obj === true){
     return "true";
   }
 
-  if (typeof obj === false){
+  if (obj === false) {
     return "false"
   }
 
