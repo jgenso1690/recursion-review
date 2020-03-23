@@ -18,7 +18,7 @@ var stringifyJSON = function(obj) {
 
 
   if (typeof obj === "number"){
-    return "obj";
+    return obj.toString();
   }
 
   if (typeof obj === true){
