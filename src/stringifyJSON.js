@@ -15,7 +15,9 @@
 // typeof undefined or null
 
 var stringifyJSON = function(obj) {
-
+  if (typeof obj === "string") {
+    return obj;
+  }
 
   if (typeof obj === "number"){
     return obj.toString();
