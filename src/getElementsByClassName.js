@@ -9,6 +9,7 @@
 var getElementsByClassName = function(className, element) {
   var elementList = [];
   element = element || document.body
+  var target = className;
 
  // does it have the className?(nodeX)
  if (element.className === className){
