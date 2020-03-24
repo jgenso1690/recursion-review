@@ -7,14 +7,14 @@
 
  // document.body - does it have children -yes? ???
 var getElementsByClassName = function(className, element) {
-  var elementList;
+
   element = element || document.body
   var target = className;
 
  // does it have the className?(nodeX)
  if (element.className === className){
      //if yes, push to result array
-   elementList = [element];
+  var elementList = [element];
  }
   //if childcount > 0 (nodeX)
   if (element.childElementCount > 0){
